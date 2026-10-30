@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+    <title>Skills IO</title>
+    <meta name="description" content="Skills IO: SAP career training and skill development across S/4HANA, SuccessFactors, ABAP, Finance, Procurement, and more." />
+    <meta property="og:title" content="Skills IO" />
+    <meta property="og:description" content="Skills IO: SAP career training and skill development across S/4HANA, SuccessFactors, ABAP, Finance, Procurement, and more." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='508 333 650 650'><path d='M724 442 A216 216 0 0 0 724 874 L724 791 A133 133 0 0 1 724 525 Z' fill='%232ec4c6'/><path d='M940 658 A216 216 0 0 1 724 874 L724 791 A133 133 0 0 0 857 658 Z' fill='%2383dcfa'/><path d='M726 658 A216 216 0 0 1 942 442 L942 525 A133 133 0 0 0 809 658 Z' fill='%230584d4'/><path d='M942 442 A216 216 0 0 1 942 874 L942 791 A133 133 0 0 0 942 525 Z' fill='%236b8bff'/></svg>" />
+    <script>
+      (function() {
+        var isROError = function(msg) {
+          return typeof msg === 'string' && (
+            msg.indexOf('ResizeObserver loop completed with undelivered notifications') !== -1 ||
+            msg.indexOf('ResizeObserver loop limit exceeded') !== -1
+          );
+        };
+        window.addEventListener('error', function(e) {
+          if (isROError(e.message)) {
+            e.stopImmediatePropagation();
+            e.preventDefault();
+            return false;
+          }
+        }, true);
+        if (window.ResizeObserver) {
+          var NativeRO = window.ResizeObserver;
+          window.ResizeObserver = function(callback) {
+            return new NativeRO(function(entries, observer) {
+              window.requestAnimationFrame(function() {
+                try {
+                  callback(entries, observer);
+                } catch (err) {
+                  if (err && isROError(err.message)) return;
+                  throw err;
+                }
+              });
+            });
+          };
+          window.ResizeObserver.prototype = NativeRO.prototype;
+        }
+      })();
+    </script>
+  </head>
+  <body class="min-h-screen bg-background font-sans text-foreground antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

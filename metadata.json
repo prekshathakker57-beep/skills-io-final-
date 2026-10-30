@@ -1,0 +1,6 @@
+{
+  "name": "Skills IO",
+  "description": "Skills IO: SAP career training and skill development across S/4HANA, SuccessFactors, ABAP, Finance, Procurement, and more.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
