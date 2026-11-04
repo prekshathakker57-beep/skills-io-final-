@@ -79,11 +79,11 @@ html {
   align-items: center !important;
   justify-content: center !important;
   flex-shrink: 0 !important;
-  z-index: 30 !important;
+  z-index: 40 !important;
   pointer-events: none !important;
   user-select: none !important;
-  margin-top: 6px !important;
-  margin-bottom: 8px !important;
+  margin-top: 14px !important;
+  margin-bottom: 6px !important;
   transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
   will-change: opacity, transform !important;
 }
@@ -180,8 +180,8 @@ html {
   border-radius: 9999px !important;
   border: 1px solid rgba(5, 132, 212, 0.5) !important;
   background: rgba(11, 30, 85, 0.92) !important;
-  padding: 4px 14px !important;
-  font-size: 12px !important;
+  padding: 5px 16px !important;
+  font-size: 13px !important;
   font-weight: 500 !important;
   letter-spacing: 0.025em !important;
   color: #d8f4fd !important;
@@ -219,24 +219,30 @@ html {
 }
 
 @media (max-width: 640px) {
+  .skillsio-scroll-indicator {
+    margin-top: 10px !important;
+    margin-bottom: 4px !important;
+  }
   .skillsio-indicator-line-top {
     height: 16px !important;
   }
   .skillsio-indicator-circle {
-    width: 30px !important;
-    height: 30px !important;
+    width: 32px !important;
+    height: 32px !important;
   }
   .skillsio-indicator-hand-svg {
-    width: 15px !important;
-    height: 15px !important;
+    width: 16px !important;
+    height: 16px !important;
   }
   .skillsio-indicator-line-bottom {
     height: 14px !important;
   }
   .skillsio-indicator-pill {
-    font-size: 11px !important;
-    padding: 3px 10px !important;
+    font-size: 11.5px !important;
+    padding: 4px 12px !important;
     gap: 6px !important;
+    white-space: normal !important;
+    text-align: center !important;
   }
 }
 
