@@ -169,3 +169,15 @@ html {
     transition: opacity 0.2s ease !important;
   }
 }
+
+
+/* Cross-device Viewport Fallbacks */
+.h-\[420svh\] {
+  height: 420vh;
+  height: 420svh;
+}
+.h-svh {
+  height: 100vh;
+  height: 100svh;
+  height: 100dvh;
+}
